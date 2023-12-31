@@ -138,7 +138,7 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
                             </FormItem>
                         )}
                     />
-                    <div className="grid grid-col-3 gap-8">
+                    <div className="grid grid-cols-3 gap-8">
                         <FormField
                             control={form.control}
                             name="label"
