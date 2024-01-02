@@ -28,6 +28,16 @@ export function MainNav({
             active: pathName === `/${params.storeId}/categories`,
         },
         {
+            href: `/${params.storeId}/sizes`,
+            label: 'Sizes',
+            active: pathName === `/${params.storeId}/sizes`,
+        },
+        {
+            href: `/${params.storeId}/colours`,
+            label: 'Colours',
+            active: pathName === `/${params.storeId}/colours`,
+        },
+        {
             href: `/${params.storeId}/settings`,
             label: 'Settings',
             active: pathName === `/${params.storeId}/settings`,

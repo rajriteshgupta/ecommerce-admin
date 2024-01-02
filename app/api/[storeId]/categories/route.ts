@@ -50,7 +50,7 @@ export async function POST(
 
         return NextResponse.json(category);
     } catch (error) {
-        console.log('[CATGORIES_POST]', error);
+        console.log('[CATEGORIES_POST]', error);
         return new NextResponse("Internal error", {status: 500});
     }
 }
@@ -72,7 +72,7 @@ export async function GET(
 
         return NextResponse.json(categories);
     } catch (error) {
-        console.log('[BILLBOARD_GET]', error);
+        console.log('[CATEGORIES_GET]', error);
         return new NextResponse("Internal error", {status: 500});
     }
 }
