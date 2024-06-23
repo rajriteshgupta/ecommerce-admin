@@ -6,11 +6,14 @@ const ColourPage = async ({
 }: {
     params: { colourId: string }
 }) => {
-    const colour = await prismadb.colour.findUnique({
-        where: {
-            id: params.colourId
-        }
-    });
+    let colour = null;
+    if(params.colourId !== 'new'){
+        colour = await prismadb.colour.findUnique({
+            where: {
+                id: params.colourId
+            }
+        });
+    }
     return (
         <div className="flex-col">
             <div className="flex-1 space-y-4 p-8">
