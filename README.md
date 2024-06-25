@@ -88,3 +88,8 @@ Start the server
 ```bash
   npm run dev
 ```
+
+
+## Appendix
+
+To setup E-commerce Store. please follow this [Link](https://github.com/rajriteshgupta/ecommerce-store).
